@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <!-- Agrega botones u otros elementos aquí si es necesario -->
+    </ion-buttons>
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Fecha</ion-label>
+      <ion-input type="date" [(ngModel)]="fecha" name="fecha" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Hora</ion-label>
+      <ion-input type="time" [(ngModel)]="hora" name="hora" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Cupos</ion-label>
+      <ion-input type="text" [(ngModel)]="cupos" name="cupos" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Precio</ion-label>
+      <ion-input type="text" [(ngModel)]="precio" name="precio" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Ubicación</ion-label>
+      <ion-input type="text" [(ngModel)]="ubicacion" name="ubicacion"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <ion-button color="warning" fill="outline" expand="block" class="large-button" expand="full" (click)="guardarViaje()">Guardar Viaje</ion-button>
+    
+    <div style="display: flex; justify-content: flex-start; width: 100%;">
+      <ion-button color="warning" fill="outline" class="small-button" routerLink="/miperfil" >Mi Perfil</ion-button>
+      <ion-button color="warning" fill="outline" class="small-button" routerLink="/home" >Regresar</ion-button>
+    </div>
+  </div>
+  
+
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+</ion-content>
